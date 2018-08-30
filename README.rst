@@ -1,7 +1,7 @@
 status_page
 ========
 
-Module for creating events and incidents in cashet server based on an “daily_check” log file.
+Creates incident normally contains information about the state of a particular component on the cashet server based on “daily_check” log file.
 
 Preparing for Development
 --------------------------------
@@ -19,7 +19,7 @@ Path Example w/ log path:
 
 ::
 
-        $ status_page --file /home/user/daily_check.log.
+        $ status_page --file /home/user/daily_check.log
 
 
 Example inventory JSON file:
