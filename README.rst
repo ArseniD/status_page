@@ -22,7 +22,7 @@ Path Example w/ log path:
         $ status_page --file /home/user/daily_check.log
 
 
-Example inventory JSON file:
+Example of daily_check log file:
 
 ::
 
