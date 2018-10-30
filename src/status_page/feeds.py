@@ -1,6 +1,6 @@
 from .helpers import load
 import requests
-
+import datetime
 
 URL = "http://localhost/api/v1/incidents"
 
@@ -11,9 +11,10 @@ HEADERS = {"X-Cachet-Token": TOKEN,
 
 FEEDS = ["Project price update US",
          "Project price update EU",
-         "Project price update AU",
+         "Project price update AS",
          "DMM feed",
-         "DMM non-product feed"]
+         "DMM non-product feed",
+         "Project Project catalogue"]
 
 
 def feed_check(log_data):
@@ -25,6 +26,6 @@ def feed_check(log_data):
     feed_list = [feed['name'] for feed in data['feeds']]
     for feed in FEEDS:
         if feed not in str(feed_list):
-           payload = "{\"name\":\"%s is missing\",\"message\":\"There is no %s\",\"status\":1,\"visible\":1}" % (feed, feed)
-           response = requests.request("POST", URL, data=payload, headers=HEADERS)
-           print(response.text)
+            payload = "{\"name\":\"%s is missing\",\"message\":\"There is no %s\",\"status\":1,\"visible\":1}" % (feed, feed)
+            response = requests.request("POST", URL, data=payload, headers=HEADERS)
+            print(response.text)

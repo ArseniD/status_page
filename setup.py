@@ -5,7 +5,7 @@ with open('README.rst', encoding='UTF-8') as f:
 
 setup(
     name='status_page',
-    version='0.0.1',
+    version='0.1.1',
     description='Creates events and incidents on the cashet server',
     long_description=readme,
     author='Arseni',

@@ -16,35 +16,36 @@ def test_feed_check():
     {
       "feeds": [
         {
-          "id": 1,
           "time": "2018-09-04 06:00:16",
-          "name": "Project price update U - Uploaded September 04, 2018 06:00:16 AM"
+          "name": "Project price update US - Uploaded September 04, 2018 06:00:16 AM Deployed"
         },
 
         {
-          "id": 2,
           "time": "2018-09-04 05:25:04",
-          "name": "Project price update EU - Uploaded September 04, 2018 05:25:04 AM"
+          "name": "Project price update EU - Uploaded September 04, 2018 05:25:04 AM Deployed"
         },
 
         {
-          "id": 3,
           "time": "2018-09-04 02:00:50",
-          "name": "Project price update AU - Uploaded September 04, 2018 02:00:50 AM"
+          "name": "Project price update AS - Uploaded September 04, 2018 02:00:50 AM Deployed"
         },
 
         {
-          "id": 4,
           "time": "2018-09-04 03:30:04",
-          "name": "DMM feed - Uploaded September 04, 2018 03:30:04 AM"
+          "name": "DMM feed - Uploaded September 04, 2018 03:30:04 AM Deployed"
         },
 
         {
-          "id": 5,
           "time": "2018-09-04 02:00:47",
-          "name": "DMM non-product feed - Uploaded August 24, 2018 02:00:08 AM"
+          "name": "DMM non-product feed - Uploaded August 04, 2018 02:00:08 AM Deployed"
+        },
+
+        {
+          "time": "2018-09-04 03:00:47",
+          "name": "Project Project catalogue - Uploaded August 04, 2018 03:00:08 AM Deployed"
         }
-    ]}
+      ]
+    }
     """)
     log_file.close()
     feeds.feed_check(log_file.name)
